@@ -6,7 +6,7 @@
 //Resto da divisão por 4 == 0 retorna verdadeiro
 //Resto da divisão
 
-export const isLeap = (ano) => {   //Trabalhar com if
+export const isLeap = (ano) => {   
     const divisivelPor4 = ano % 4 === 0;
     const divisivelPor100 = ano % 100 === 0;
     const divisivelPor400 = ano % 400 === 0;
