@@ -59,4 +59,8 @@ export class Triangle {
     const isSideADifferentSideC = this.sideA !== this.sideC;
     return this.isValidTriangle && (isSideADifferentSideB && isSideADifferentSideC && isSideBDifferentSideC);
   }
+get isDegenerate(){
+  return this.isValidTriangle && (this.sideA + this.sideB === this.sideC || this.sideC + this.sideB === this.sideA || this.sideA + this.sideC === this.sideB);
+}
+
 };
