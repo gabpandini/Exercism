@@ -33,13 +33,23 @@ export class ResistorColorTrio {
   
   var b = "Resistor value: " + math + " ohms";
   var c = "Resistor value: " + (math/1000) + " kiloohms";
+  var d = "Resistor value: " + (math/1000000) + " megaohms";
+  var e = "Resistor value: " + (math/1000000000) + " gigaohms";
 
   if(math > 0 && math <= 999){
     return b;
   }
 
-  else if(math > 999){
+  if(math > 999 && math < 999999){
     return c;
+  }
+
+  if(math > 999999 && math < 999999999){
+    return d;
+  }
+
+  if(math > 999999999){
+    return e;
   }
 
   }
