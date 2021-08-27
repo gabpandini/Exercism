@@ -48,9 +48,8 @@ export class ResistorColorTrio {
     return d;
   }
 
-  if(math > 999999999){
+  else {
     return e;
   }
-
   }
 };
